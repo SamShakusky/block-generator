@@ -1,0 +1,54 @@
+@font-face {
+  font-family: avenir-bold;
+  src: url(../fonts/AvenirNextCyr-Bold.otf); /* Путь к файлу со шрифтом */
+ }
+
+@font-face {
+   font-family: avenir-medium;
+   src: url(../fonts/AvenirNextCyr-Medium.otf); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
+    font-family: avenir-regular;
+    src: url(../fonts/AvenirNextCyr-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+     font-family: avenir-demi;
+     src: url(../fonts/AvenirNextCyr-Demi.otf); /* Путь к файлу со шрифтом */
+    }
+
+body {
+    font-family: avenir-regular;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+section {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.form {
+  margin-right: 36px;
+}
+
+.result {
+  background: url(../src/test-img.png);
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+
+  width: 500px;
+  height: 500px;
+}
