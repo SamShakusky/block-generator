@@ -4,12 +4,14 @@
 	//cache DOM
 	var $form = $('.form'),
 		$entity = $form.children('div'),
-		$button = $form.find('button'),
+		$checkbox = $form.find('input'),
+		$select = $form.find('select'),
 		$result = $('.result'),
 		$resultText = $result.find('p');
 	
 	//bind events
-	$button.on('click',getPicture);
+	$checkbox.on('change',getPicture);
+	$select.on('change',getPicture);
 	
 	function getPicture() {
 		var result = '';

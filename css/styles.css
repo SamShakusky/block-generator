@@ -1,53 +1,65 @@
+/*
 @font-face {
-  font-family: avenir-bold;
-  src: url(../fonts/AvenirNextCyr-Bold.otf); /* Путь к файлу со шрифтом */
- }
-
-@font-face {
-   font-family: avenir-medium;
-   src: url(../fonts/AvenirNextCyr-Medium.otf); /* Путь к файлу со шрифтом */
-  }
-
-@font-face {
-    font-family: avenir-regular;
-    src: url(../fonts/AvenirNextCyr-Regular.otf); /* Путь к файлу со шрифтом */
-   }
-
-@font-face {
-     font-family: avenir-demi;
-     src: url(../fonts/AvenirNextCyr-Demi.otf); /* Путь к файлу со шрифтом */
-    }
-
-body {
-    font-family: avenir-regular;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: flex-start;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-top: 48px;
-    margin-bottom: 48px;
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirNextCyr-Bold.otf);
+	font-weight: 700;
 }
 
-section {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+@font-face {
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirNextCyr-Demi.otf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirNextCyr-Medium.otf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirNextCyr-Regular.otf);
+	font-weight: 400;
+}
+*/
+
+body {
+	font-family: georgia;
+    display: flex;
+	flex-wrap: wrap;
+    margin: 48px 32px;
+}
+
+h1 {
+	font-size: 2.2em;
+	flex-basis: 100%;
+	margin: 0 0 1.1em;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: .5em 0 1em;
 }
 
 .form {
-  margin-right: 36px;
+	width: 350px;
+	margin-right: 36px;
+}
+
+.form > div {
+	margin: 0 .2em .3em;
+}
+
+.form label {
+	padding-left: .2em;
+	vertical-align: middle;
 }
 
 .result {
-  background: url(../src/test-img.png);
+  background: url(../src/test-img.png) no-repeat center center;
   background-color: #eee;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: center;
 
   width: 500px;
   height: 500px;
